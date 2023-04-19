@@ -1,0 +1,23 @@
+.mycontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.search {
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.search input{
+    background-color: var(--grey-1);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: blue;
+    font-size: 0.92em;
+    text-align: center;
+}

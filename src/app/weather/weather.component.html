@@ -1,0 +1,21 @@
+<div class="search">
+  <form #from="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search city..." name="city" [(ngModel)]="city">
+  </form>
+</div>
+
+<div class="mycontainer">
+  <div class="card text-white bg-primary m-2" style="max-width: 18rem;">
+    <div class="card-header text-center ">
+        <h2>{{weatherData?.name}}</h2>
+        <p><img src="{{iconUrl}}" alt="Weather image"></p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Summary: {{weatherData?.weather?.[0]?.description}}</p>
+      <p class="card-text">Temperature: {{weatherData?.main?.temp}}°C</p>
+      <p class="card-text">Feels Like: {{weatherData?.main?.feels_like}}°C</p>
+      <p class="card-text">Humidity: {{weatherData?.main?.humidity}} hPa</p>
+      <p class="card-text">Pressure: {{weatherData?.main?.pressure}} %</p>
+    </div>
+  </div>
+</div>
